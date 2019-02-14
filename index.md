@@ -313,7 +313,7 @@ please preview your site before committing, and make sure to run
 
 
 
-<div id="r"> Start of 'R' section. 
+<div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
   <p>
@@ -370,7 +370,7 @@ please preview your site before committing, and make sure to run
 </div> {% comment %} End of 'R' section. {% endcomment %}
 
 
-<div id="openrefine">  Start of 'OpenRefine' section. 
+<div id="openrefine"> {% comment %}  Start of 'OpenRefine' section. {% endcomment %}
   <h3>OpenRefine</h3>
   <p>
     For this lesson you will need <em>OpenRefine</em> and a
