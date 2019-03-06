@@ -193,6 +193,9 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
+<p><strong>Registration:</strong> Please complete the online registration form <a href="https://www.quicket.co.za/events/67086-satrday-2019-data-carpentry-workshop/#/">here</a>. Limited space is available.
+  </p>
+  
 <hr/>
 
 {% comment %} 
