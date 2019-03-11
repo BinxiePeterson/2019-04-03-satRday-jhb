@@ -29,7 +29,31 @@ double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
 
+{% comment %}
+Add logos to top of page
+{% endcomment %}
 
+
+<div class="partner-logos" style = "text-align:right;">
+  <a href="https://joburg2019.satrdays.org" title="satRday">
+    <img style="margin-right:50px" alt="satRday" src="./fig/satRday2019_logo.png" width="100"/>
+  </a>
+  {% comment %}
+  <a href="https://www.wits.ac.za/mbrt/" title="Molecular Biosciences Research Thrust at Wits University">
+    <img style="margin-right:50px" alt="MBRT at Wits" src="./fig/mbrt_wits.png" width="150"/>
+  </a>
+  {% endcomment %}
+</div>
+
+<hr/>
+
+{% comment %}
+Add quicket widget to webpage
+{% endcomment %}
+
+<iframe src="https://www.quicket.co.za/embed.aspx?productid=67086&productname=satrday-2019-data-carpentry-workshop&embed=true&v=2" frameborder="0" scrolling="yes" width="100%" height="300"></iframe>
+
+<hr/>
 
 {% comment %}
 For a workshop please delete the following block
@@ -39,10 +63,11 @@ For a workshop please delete the following block
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
 You specified <code>carpentry: {{page.carpentry}}</code> in <code>index.md</code> and
-<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to 
+<code>carpentry: {{site.carpentry}}</code> in <code>_config.yml</code>. Make sure you edit both files. After editing <code>_config.yml</code>, you need to run <code>make serve</code> again to
 see the changes take effect locally.
 </div>
 {% endif %}
+
 
 {% comment %}
 EVENTBRITE
@@ -132,7 +157,7 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges. They should have a few specific software packages installed (listed <a href="#setup">below</a>). 
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
   on.
 </p>
 
@@ -195,15 +220,15 @@ Display the contact email address set in the configuration file.
 
 <p><strong>Registration:</strong> Please complete the online registration form <a href="https://www.quicket.co.za/events/67086-satrday-2019-data-carpentry-workshop/#/">here</a>. Limited space is available.
   </p>
-  
+
 <hr/>
 
-{% comment %} 
-SURVEYS - DO NOT EDIT SURVEY LINKS 
+{% comment %}
+SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "swc" %} 
+{% if site.carpentry == "swc" %}
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif site.carpentry == "dc" %}
@@ -342,9 +367,9 @@ please preview your site before committing, and make sure to run
           from <a href="https://cran.r-project.org/index.html">CRAN</a>.
           Also, please install the
           <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-          Note that if you have separate user and admin accounts, you should run the 
-          installers as administrator (right-click on .exe file and select "Run as 
-          administrator" instead of double-clicking). Otherwise problems may occur later, 
+          Note that if you have separate user and admin accounts, you should run the
+          installers as administrator (right-click on .exe file and select "Run as
+          administrator" instead of double-clicking). Otherwise problems may occur later,
           for example when installing R packages.
         </p>
       </article>
@@ -424,5 +449,3 @@ please preview your site before committing, and make sure to run
 </div>
 </div>
 </div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
-
-
